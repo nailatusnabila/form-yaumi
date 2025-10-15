@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seminar Parenting - SIBI BIAS YAUMI</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMD/cd8E6T2tQdZNFh8zJ/NnO7i1G3Y/d+0I+0Q+0yvR4+y9F0K0G+0R0G+0R0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* BASE STYLES & FONTS (Poppins Modern) */
         body {
@@ -21,10 +21,11 @@
         /* CONTAINER UTAMA */
         .main-container {
             max-width: 450px; 
-            margin: 0 auto;
+            margin: 2rem auto;
             background-color: white; 
-            min-height: 100vh;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); 
+            border-radius: 20px;
+            overflow: hidden;
         }
         
         /* HEADER STRIP - Diganti jadi Badge Modern */
@@ -95,10 +96,10 @@
             margin-bottom: 10px;
         }
 
-        /* DETAIL ACARA (Tanggal & Lokasi) - Pakai Grid */
+        /* DETAIL ACARA (Tanggal & Lokasi) */
         .detail-item {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             margin-bottom: 12px;
             font-size: 0.9em;
         }
@@ -107,16 +108,19 @@
         .icon {
             font-size: 1.5em; 
             width: 30px;
-            /* Kita kasih display:flex untuk memastikan penempatan di tengah */
             display: flex;
             justify-content: center;
             align-items: center;
+            /* Ikonnya sendiri diberi warna Teal */
+            color: #00897b;
+            border-right: 3px solid #d32f2f; 
+            padding-right: 15px; 
+            margin-right: 15px; 
         }
 
-        /* Targetkan class Font Awesome (fa-solid) di dalam span.icon */
-        .icon .fa-solid {
-            color: #00897b !important; /* Paksa warna hijau teal */
-            font-size: 1.1em !important; /* Paksa ukuran biar konsisten */
+        .icon i {
+            /* Bikin ukuran ikon di dalam span lebih kecil biar proporsional */
+            font-size: 1em !important; 
         }
         /* ------------- FIX ICON (FINAL FONT AWESOME) END ------------- */
 
@@ -243,7 +247,7 @@
         /* Warna Box Statistik */
         .hadir { background-color: #388e3c; } 
         .ragu { background-color: #ffb300; } 
-        .tidak { background-color: #d32f2f; } 
+            .tidak { background-color: #d32f2f; } 
 
         /* Komentar */
         .comment-area {
@@ -289,14 +293,16 @@
             <h2>KELUARGA BESAR SIBI BIAS YAUMI FATIMAH PATI - JUWANA</h2>
             
             <div class="card">
-                <p style="text-align: center; font-weight: 600; color: #ff8a65;">*Undangan Kehadiran*</p>
+                <p style="text-align: center; font-weight: 600; color: #ff8a65;">Undangan Seminar</p>
                 <div class="arabic-box">
                     بِسْــــــــــــــــــمِ اﷲِالرَّحْمَنِ اارَّحِيم
                 </div>
                 <div class="main-text">
                     <p>Assalamu'alaikum Warohmatullohi Wabarokatuh.</p>
-                    <p>Alhamdulillah, limpahan nikmat dan karunia Allah SWT senantiasa tercurahkan kepada kita semua. Kami mengundang Bapak/Ibu dalam acara **Seminar Parenting: Menjadi Orang Tua Hebat**.</p>
+                    <p>Alhamdulillahi Robbil 'aalamiin  atas limpahan Rahmat dan karunia kepada kita semua. Sholawat dan salam semoga terlimpah untuk Rosulullohﷺ yang membawa Risalah agung dan umat yang berjuang menegakkannya. Aamiin ...</p> 
+                    <p>Bersamaan dengan ini, kami bermaksud mengundang Bapak/Ibu dalam acara <strong>Seminar Parenting: Menjadi Orang Tua Hebat</strong>.</p>
                     <p>Suatu kehormatan bagi kami apabila Bapak/Ibu berkenan hadir untuk mendapatkan wawasan dan panduan terbaik dalam mendidik putra-putri.</p>
+                    <p>Berikut adalah jadwal <strong>Seminar Parenting: Menjadi Orang Tua Hebat</strong> 👇</p>
                 </div>
 
                 <hr style="border: 0; border-top: 1px solid #eee; margin: 25px 0;">
@@ -304,15 +310,15 @@
                 <div style="text-align: left;">
                     <div class="detail-item">
                         <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
-                        <span class="detail-info">Sabtu, 9 November 2025</span>
+                        <span class="detail-info">Sabtu, 1 Nopember 2025</span>
                     </div>
                     <div class="detail-item">
                         <span class="icon"><i class="fa-solid fa-clock"></i></span>
-                        <span class="detail-info">Pukul 07.30 WIB</span>
+                        <span class="detail-info">Pukul 07.30 - 12.00 WIB</span>
                     </div>
                     <div class="detail-item">
                         <span class="icon"><i class="fa-solid fa-building"></i></span>
-                        <span class="detail-info">Aula Yayasan Patimah Pati<br>Jl. Raya Pati-Juwana Km. 05 Pati 59191 Jateng</span>
+                        <span class="detail-info">Adelia Ballroom, Hotel New Merdeka<br>Jl. Diponegoro No. 69 Pati<br>0295-381106</span>
                     </div>
                 </div>
             </div>
@@ -420,7 +426,7 @@
 
     <script>
         // WAJIB GANTI INI DENGAN URL GOOGLE APPS SCRIPT-mu!
-        const GAS_WEB_APP_URL = 'GANTI_DENGAN_URL_GAS_MU_DI_SINI'; 
+        const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbys2zBr-EcIvXjv_knVFQMWtXGIVso6I1YtjCtctrC8OcU2tyv4EfHhyS4n0FHAbIYZ/exec'; 
 
         // --- Logic Navigasi Halaman ---
         function showPage(pageId) {
