@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seminar Parenting - SIBI BIAS YAUMI</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMD/cd8E6T2tQdZNFh8zJ/NnO7i1G3Y/d+0I+0Q+0yvR4+y9F0K0G+0R0G+0R0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* BASE STYLES & FONTS (Poppins Modern) */
         body {
@@ -102,45 +103,26 @@
             font-size: 0.9em;
         }
         
-        /* ------------- FIX ICON (BASE64) START ------------- */
-        /* Hapus semua style Font Awesome dan ganti dengan pseudo-element */
+        /* ------------- FIX ICON (FINAL FONT AWESOME) START ------------- */
         .icon {
             font-size: 1.5em; 
             width: 30px;
-            color: #00897b; /* Warna ikon */
+            /* Kita kasih display:flex untuk memastikan penempatan di tengah */
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        
-        /* Ikon Kalender (fa-calendar-days) */
-        .detail-item:nth-child(1) .icon {
-            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSIjMDA4OTdiIiBkPSJNNzYgNkMzNy4zIDYgNiAzNy4zIDYgNzZWNDM2YzAgMzguNyAzMS4zIDcgNzYgN3czNiAzMy4zIDc2IDQ0OCAzMzEuMyA0NDggMzcyVjc2YzAtMzguNy0zMS4zLTctNzYtNzd6TTM0Ni4yIDMzMS4zbDE5LjkgMTYuOWMzLjcgMy4xIDMuNiA4LjggLjEgMTIuM0wxMjMuOCAzOTQuNGMtMy41IDMuNS04LjQgMi45LTEwLjEtMS44TDEwNC43IDM3My41Yy0xLjktNS4xLS40LTEwLjkgMy43LTE0LjNMMzE3IDc4LjFsMjUuMiAyMS42Yy0uMy41LS43IDFhMTYgMTYgMCAwIDEgMy43IDE0Ljd6bS01Ni4zLTU2LjNsMzkuNCAzMS45Yy44LjYuNyAxLjktLjQgMi40TDExMS43IDQyM2MtMS4yLjQtMi41LjEtMy4zLS41TDU2LjggMzg3Yy0uOS0uNy0xLTEuOC0uNC0yLjlsMjM2LjctMjUwLjFjLjQtLjUuNy0uOCAxLS4zVjMzNC43em0tMzkuNC0zNi44YzItMi40IDIuMy01LjktLjEtOC4zbC03LjgtNy45Yy0yLjUtMi41LTYtMi41LTguNS0uMkwxOTguNyAzMDZjLTIuNCAyLjQtMi42IDYuMS0uMiA4LjZsNy45IDcuOGMyLjUgMi41IDYuMSAyLjUgOC41LjF6Ii8+PC9zdmc+' alt='Calendar'>');
-            background-repeat: no-repeat;
-            background-size: 80%;
-            background-position: center;
-        }
 
-        /* Ikon Jam (fa-clock) */
-        .detail-item:nth-child(2) .icon {
-            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjMDA4OTdiIiBkPSJNMTQgMjU2QzE0IDExNC42IDEyNS45IDIgMjU2IDJzMjQyIDExMi41IDI0MiAyNTRjMCA0Ni44LTEyLjQgOTEuMi0zNC44IDEzM0w0OTggNDk4Yy0yLjQgMi4zLTUuOSA1LTExLjUgNS43LTYuNSAxLjYtMTMtLjQtMTgtNC45TDI1NiA0MTMuNmMtMTA4LjMtMTYuNi0xOTQuNC0xMDcuMS0xOTQuNC0yMDguNmwwLTd6bS4xIDYuNGMwIDEyOC41IDg3LjggMjQyLjUgMjI0LjMgMzczLjlsNy42IDExLjljMi44IDQuNCA2LjMgOC4xIDEwLjEgMTAuOGM0LjIgMy4xIDkgNS4xIDE0IDYuMUMyNTYgNTExLjggMTUuNiA0MTUuNSAxNS42IDI2Mi40bC0uNSAwem01Ni4zIDg1LjRDNzcgMjY2LjMgMTYzLjkgNTcuNyAyNTYgNTdjMTEyLjQgMCAyMDQuNiA4NC4zIDIxOC44IDE5M2wxMS4zLTIuM2M0LjgtLjkgOS42LjcgMTMuMSAyLjUgNC4xIDIuMiA3LjUgNS4yIDkuOCAxLjZsMy4zIDMuM2MxLjYgMS41IDIuNSA1LjIgMi44IDguMyAxIDkgLTUgMTcuMy0xNC40IDE5LjFsLS44LS4xYy00LjQtLjgtOC42LS43LTEyLjUgMS4xTDI2Mi40IDQ2Mi4zYy0xMy4zIDQuNC0yNi4yIDYuNy0zOC45IDYuNy0xMjguMyAwLTIzMS4yLTEwMy4yLTIzMS4yLTIzMS4yIDAgLTc5LjkgMzkuOC0xNTIuMiAxMDEuMy0xOTYuNUwyMzEgNDQ4LjRjLTIuNy0uNC01LjUtLjYtOC4zLS42eiIvPjwvc3ZnPg==');
-            background-repeat: no-repeat;
-            background-size: 80%;
-            background-position: center;
+        /* Targetkan class Font Awesome (fa-solid) di dalam span.icon */
+        .icon .fa-solid {
+            color: #00897b !important; /* Paksa warna hijau teal */
+            font-size: 1.1em !important; /* Paksa ukuran biar konsisten */
         }
-
-        /* Ikon Gedung (fa-building) */
-        .detail-item:nth-child(3) .icon {
-            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NzYgNTEyIj48cGF0aCBmaWxsPSIjMDA4OTdiIiBkPSJNNDcwLjcgNjAuM0MzNzcuOC0zMi4xIDIyMS4yLTE1LjQgMTU0LjkgODcuMWwtNzEuOSA1My45Yy01LjUgNC4yLTEyLjEgNi4yLTE4LjkgNi4yLTExLjUgMC0yMi4zLTUtMzAuNi0xMy41LTguMi04LjMtMTMuNS0yMC4xLTEzLjUtMzMuNGwtLjgtMzIuMWMtLjItMTIuNyA4LjUtMjMuMyAyMS4xLTI2LjNsNzkuMi0xOS44YzExLjYtMyAzOC40LTEwLjkgNDUuNy0yMi45IDcuMy0xMi0zLjEtMjguOC0xNC45LTQ0LjVMNDAwLjggMTQuN2M2LjktNS41IDcuOC0xNi41IDIuMi0yMy40cy0xNi41LTcuOC0yMy40LTIuMlM0NTAuNSA5LjggNDU0LjIgMTRjLS4yIDUuOC0uNyAxMi4xLS40IDE4LjVsLjQgNDguMmMuMiAxMi43LTguNSA0NC4yLTIxLjIgNDcuNGwtMzIuNSA4LjJjLTIuNiAuNy01LjEuMS03LjUtLjdsLTQ3LjItMjEuN2MtMy4xLTEuNC02LjctMS40LTkuOCAwTDE4NS4yIDExOC40Yy0xOC45IDguNy0yOS40IDE1LTM1LjUgMTkuMi02LjEgNC4zLTkuOCA3LjgtMTIuNSAxMC45TDEzMC42IDE3OWMtOS45IDExLjktMjIgMTkuMy0zNC41IDIyLjJsLTcxLjQgMTguMWMtMTMuMSAzLjMtMjEuOCAxNC0yMS44IDI3LjFsLjggMjEuMWMxLjUgMTUuMiAxMC43IDQyLjMgMjMuNSA0OS41IDYuNSA2LjYgMTUuNiAxMC4xIDI1LjEgMTAuMSAxMiAwIDI0LjMtNCAzNC4xLTEzLjdsNzguNy02MS4yYzQuOC0zLjcgMTEuMS01LjQgMTcuNS01LjQgOC4zIDAgMTYuOCAzLjYgMjMuNSA5LjlsNzIuMiA2Ny40IDEzOC44IDkuMWM0LjQgMCA4LjcgMi41IDExLjUgNi41IDMuMSA0LjUgMy40IDkuOS44IDE0LjNMNDIwLjUgNDk2LjJjLTEuOCAzLjEtNC40IDUuNS03LjggNi41LTMuMyAxLjEtNi45IDEuNi0xMC41IDEuNi03LjUgMC0xNC4zLTEuOC0yMS4yLTUuMkwxNzkgNDI4LjVjLTcuMy0zLjQtMTQtNy43LTE5LjItMTIuNkw1Ni4xIDMzMS40Yy02LjktNi42LTE2LjYtMTEuNi0yOC41LTE0LjItMTIuMi0yLjctMjUuMS0zLjQtMzcuNS0uNGwtNzQuOSAxNi43Yy0uMiAwLS4zIDAtLjUgME01MzkuMyA0NzMuMmwtNzktMTcuNWMtMy4xLS43LTYuNC0uMS05LjUgMS44bC00OS40IDMxLjljLTEwLjUgNi45LTI1LjEgOC41LTM4LjUgNC4xTDI2MiA0MjUuMmMtMi44LS45LTUuOS0uOC04LjcgLjNMNDEuOSA0NzQuNGMtNi41IDQuNC0xNC44IDUuOC0yMi45IDMuNi04LjEtMi4yLTE0LjktOC4yLTE4LjQtMTYuNkwxLjYgNDM5Yy0zLjItOC4zLS41LTE2LjUgNi43LTIzLjJsNzktMTcuNmMzLjEtLjggNi41LS41IDkuNiAxLjZsMTcuNCAxMS42YzIuNyAxLjggNS44IDIuNyA5LjEgMi43IDIuNiAwIDUuMS0uNyA3LjQtMi4xTDQyMy41IDM4NWMxMi41LTcgMjYuNC00LjQgMzcuNSAzLjZsNzEgNDcuNGMxLjEgLjkgMi4xIDIuMiAyLjkgMy43IDIuMiAzLjUgMi40IDcuNi4xIDExLjJMNTM0LjcgNDg1LjNjLTIuMyAzLjYtNS40IDYuNS04LjQgOC42bC01LjkgNC42eiIvPjwvc3ZnPg==');
-            background-repeat: no-repeat;
-            background-size: 80%;
-            background-position: center;
-        }
+        /* ------------- FIX ICON (FINAL FONT AWESOME) END ------------- */
 
         .detail-info {
             line-height: 1.3;
         }
-        /* ------------- FIX ICON (BASE64) END ------------- */
 
         /* --- PAGES LAYOUT --- */
         #page1, #page2, #page3 {
@@ -321,15 +303,15 @@
 
                 <div style="text-align: left;">
                     <div class="detail-item">
-                        <span class="icon"></span>
+                        <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
                         <span class="detail-info">Sabtu, 9 November 2025</span>
                     </div>
                     <div class="detail-item">
-                        <span class="icon"></span>
+                        <span class="icon"><i class="fa-solid fa-clock"></i></span>
                         <span class="detail-info">Pukul 07.30 WIB</span>
                     </div>
                     <div class="detail-item">
-                        <span class="icon"></span>
+                        <span class="icon"><i class="fa-solid fa-building"></i></span>
                         <span class="detail-info">Aula Yayasan Patimah Pati<br>Jl. Raya Pati-Juwana Km. 05 Pati 59191 Jateng</span>
                     </div>
                 </div>
