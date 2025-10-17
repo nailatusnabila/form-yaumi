@@ -5,9 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Undangan Seminar Pendidikan Anak</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* CSS lu udah bagus, nggak perlu diubah, jadi gue biarin apa adanya */
-        body { font-family: sans-serif; }
+        <style>
+        body {
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes glow-pulse {
+            0%, 100% { 
+                text-shadow: 0 0 20px rgba(34, 197, 94, 0.3), 0 0 40px rgba(59, 130, 246, 0.2);
+                transform: scale(1);
+            }
+            50% { 
+                text-shadow: 0 0 30px rgba(34, 197, 94, 0.6), 0 0 60px rgba(59, 130, 246, 0.4);
+                transform: scale(1.02);
+            }
+        }
+        
+        .bounce-animation {
+            animation: bounce 2s infinite;
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .glow-title {
+            animation: glow-pulse 3s ease-in-out infinite;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+        }
+        
+        .card-shadow {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body class="min-h-screen bg-gray-100 flex items-center justify-center p-4">
@@ -87,7 +131,7 @@
 
     <script>
         // === GANTI URL INI DENGAN URL DEPLOYMENT APPS SCRIPT LU ===
-        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwpRoLELAcWOy14VpFa0n8A5N7EGBfdeZgaSd8N4sB8kTUmf_uEhR3u6CwcBcSOhwREXg/exec';
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxtyj8ISzh_P2lFgqTCxlODHtyF2tQmDu9rsZXm_H_k9BC0V7GeqMCoojfzs5xvmWvxPw/exec';
 
         // Fungsi simpel untuk pindah-pindah halaman
         function showPage(pageId) {
