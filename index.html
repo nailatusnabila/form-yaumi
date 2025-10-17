@@ -392,14 +392,13 @@
             
             try {
                 // Send to Google Apps Script
-                const response = await fetch('https://script.google.com/macros/s/AKfycbz0b2UlqOxz_tGSvKxRFk3JxsVpZagLyKvR9vg2sW1hIXU9j4nHa6D_91rJE5VHOno-MQ/exec', {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data)
-                });
+                const response = await fetch('https://script.google.com/macros/s/AKfycbwpBK0Y9L6WsOEvUepAVcD0_Mdt36cJNovtZ0jIL4dZhO-ICmTKljtFBCVy7UxFZJLz/exec', {
+                method: 'POST',
+                headers: {
+                'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            });
                 
                 // Also save to localStorage as backup
                 let registrations = JSON.parse(localStorage.getItem('seminarRegistrations') || '[]');
