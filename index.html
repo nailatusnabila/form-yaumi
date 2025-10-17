@@ -9,7 +9,7 @@
     <style>
         body {
             box-sizing: border-box;
-            font-size: 12px;
+            /* font-size: 12px; Dihapus biar Tailwind yang ngatur */
         }
         
         @keyframes bounce {
@@ -58,21 +58,18 @@
 <body class="min-h-screen gradient-bg flex items-center justify-center p-4">
     <main class="w-full max-w-lg mx-auto">
         <div id="invitationPage" class="bg-white rounded-3xl card-shadow overflow-hidden">
-            <!-- Header -->
             <div class="w-full overflow-hidden rounded-t-3xl h-36 sm:h-48 md:h-56">
                 <img src="https://i.imgur.com/TxeNJT1.png" 
-                 alt="Banner Seminar Parenting"
-                 class="w-full h-full object-cover object-center">
+                     alt="Banner Seminar Parenting"
+                     class="w-full h-full object-cover object-center">
             </div>
             
-            <!-- Konten utama -->
             <div class="p-8">
                 <div class="text-center mb-6">
-                    <h2 class="text-4xl font-bold mb-8 bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent leading-relaxed">
-                        Menjadi Orangtua Hebat
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-8 bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent leading-relaxed">
+                        MENJADI ORANGTUA HEBAT
                     </h2>
                     
-                    <!-- Gambar poster -->
                     <div class="mb-6">
                         <img src="https://i.imgur.com/QVVFX7w.jpeg" 
                              alt="Poster Seminar Parenting" 
@@ -81,88 +78,77 @@
                     </div>
                 </div>
                 
-                <!-- Teks undangan -->
                 <div class="mb-6 text-left">
-                    <p class="text-base text-gray-700 mb-3">Assalamualaikum Warohmatullohi Wabarookatuh.</p>
+                    <p class="text-sm sm:text-base text-gray-700 mb-3">Assalamualaikum Warohmatullohi Wabarookatuh.</p>
                     
-                    <p class="text-base text-gray-700 mb-3">Alhamdulillahi Robbil 'aalamiin atas limpahan Rahmat dan karunia kepada kita semua. Sholawat dan salam semoga terlimpah untuk Rosululloh ﷺ pembawa Risalah agung dan umat yang berjuang menegakkannya. Aamiin.</p>
+                    <p class="text-sm sm:text-base text-gray-700 mb-3">Alhamdulillahi Robbil 'aalamiin atas limpahan Rahmat dan karunia kepada kita semua. Sholawat dan salam semoga terlimpah untuk Rosululloh ﷺ pembawa Risalah agung dan umat yang berjuang menegakkannya. Aamiin.</p>
                     
-                    <p class="text-base text-gray-700 mb-4">Mengundang Bapak / Ibu dalam acara Parenting "Menjadi Orang Tua Hebat" Keluarga Besar BIAS Yaumi Fatimah dengan detail sebagai berikut 👇</p>
+                    <p class="text-sm sm:text-base text-gray-700 mb-4">Mengundang Bapak / Ibu dalam acara Parenting "Menjadi Orang Tua Hebat" Keluarga Besar BIAS Yaumi Fatimah dengan detail sebagai berikut 👇</p>
                 </div>
                 
-                <!-- Info narasumber -->
-                <h3 class="text-xl font-bold text-gray-800 mb-3">Narasumber Ahli</h3>
+                <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3">Narasumber Ahli</h3>
                 <div class="flex items-center space-x-3 p-3 bg-green-50 rounded-xl mb-4">
                     <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                        <span class="text-white text-lg">👩‍🏫</span>
+                        <span class="text-base sm:text-lg">👩‍🏫</span>
                     </div>
                     <div>
-                        <p class="font-semibold text-gray-800 text-lg">dr. H. Agus Ali Fauzi, PGD, Pall Med</p>
-                        <p class="text-base text-gray-600">Dokter & Praktisi Paliatif</p>
+                        <p class="font-semibold text-gray-800 text-base sm:text-lg">dr. H. Agus Ali Fauzi, PGD, Pall Med</p>
+                        <p class="text-sm sm:text-base text-gray-600">Dokter & Praktisi Paliatif</p>
                     </div>
                 </div>
                 
-                <!-- Divider -->
                 <div class="border-t border-gray-200 my-6"></div>
                 
-                <!-- Detail acara -->
                 <div class="mb-6">
-                    <!-- Acara Pati-Juwana -->
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Pati-Juwana</h3>
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3">Pati-Juwana</h3>
                     <div class="space-y-4 mb-6">
                         <div class="flex items-center space-x-3 p-3 bg-green-50 rounded-xl">
                             <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                                <span class="text-white text-lg">📍</span>
+                                <span class="text-white text-base sm:text-lg">📍</span>
                             </div>
                             <div>
-                                <p class="font-semibold text-gray-800 text-lg">Sabtu, 1 November 2025</p>
-                                <p class="text-base text-gray-600">Pukul 07.30 s.d. 12.00 WIB</p>
-                                <p class="text-base text-gray-600">Adelia Ballroom, Hotel New Merdeka Pati</p>
-                                <p class="text-base text-gray-600">Jl. Diponegoro No. 69 Pati</p>
+                                <p class="font-semibold text-gray-800 text-base sm:text-lg">Sabtu, 1 November 2025</p>
+                                <p class="text-sm sm:text-base text-gray-600">Pukul 07.30 s.d. 12.00 WIB</p>
+                                <p class="text-sm sm:text-base text-gray-600">Adelia Ballroom, Hotel New Merdeka Pati</p>
+                                <p class="text-sm sm:text-base text-gray-600">Jl. Diponegoro No. 69 Pati</p>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Acara Kudus-Jepara -->
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Kudus-Jepara</h3>
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3">Kudus-Jepara</h3>
                     <div class="space-y-4 mb-6">
                         <div class="flex items-center space-x-3 p-3 bg-green-50 rounded-xl">
                             <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                                <span class="text-white text-lg">📍</span>
+                                <span class="text-white text-base sm:text-lg">📍</span>
                             </div>
                             <div>
-                                <p class="font-semibold text-gray-800 text-lg">Ahad, 9 November 2025</p>
-                                <p class="text-base text-gray-600">Pukul 07.30 s.d. 12.00 WIB</p>
-                                <p class="text-base text-gray-600">Majesty Grand Ballroom, Hotel Griptha Kudus</p>
-                                <p class="text-base text-gray-600">Jl. AKBP Agil Kusumadya No.100 Jati-Kudus</p>
+                                <p class="font-semibold text-gray-800 text-base sm:text-lg">Ahad, 9 November 2025</p>
+                                <p class="text-sm sm:text-base text-gray-600">Pukul 07.30 s.d. 12.00 WIB</p>
+                                <p class="text-sm sm:text-base text-gray-600">Majesty Grand Ballroom, Hotel Griptha Kudus</p>
+                                <p class="text-sm sm:text-base text-gray-600">Jl. AKBP Agil Kusumadya No.100 Jati-Kudus</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Teks konfirmasi -->
                 <div class="text-center mb-4">
-                    <p class="text-base text-gray-700">Konfirmasi kehadiran Bapak/Ibu di sini 👇</p>
+                    <p class="text-sm sm:text-base text-gray-700">Konfirmasi kehadiran Bapak/Ibu di sini 👇</p>
                 </div>
                 
-                <!-- Tombol konfirmasi -->
                 <div class="space-y-3">
-                    <button onclick="showRegistrationForm()" class="w-full bg-gradient-to-r from-green-500 to-blue-500 text-white font-bold py-4 px-6 rounded-xl hover:from-green-600 hover:to-blue-600 transform hover:scale-105 transition-all duration-200 shadow-lg text-lg">
+                    <button onclick="showRegistrationForm()" class="w-full bg-gradient-to-r from-green-500 to-blue-500 text-white font-bold py-4 px-6 rounded-xl hover:from-green-600 hover:to-blue-600 transform hover:scale-105 transition-all duration-200 shadow-lg text-base sm:text-lg">
                         ✅ Konfirmasi Kehadiran
                     </button>
                 </div>
                 
-                <!-- Footer -->
                 <div class="mt-6 pt-6 border-t border-gray-200 text-center">
-                    <p class="text-sm text-gray-600">© BIAS Yaumi Fatimah 2025.</p>
+                    <p class="text-xs sm:text-sm text-gray-600">© BIAS Yaumi Fatimah 2025.</p>
                 </div>
             </div>
         </div>
         
-        <!-- Registration Form Page -->
         <div id="registrationPage" class="w-full max-w-lg mx-auto hidden">
             <div class="bg-white rounded-3xl card-shadow overflow-hidden">
-                <!-- Header -->
                 <div class="bg-gradient-to-r from-green-500 to-blue-500 p-6 text-center relative">
                     <button onclick="showInvitationPage()" class="absolute top-4 left-4 text-white hover:text-gray-200">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -171,116 +157,106 @@
                     </button>
                     
                     <div class="w-16 h-16 bg-white rounded-full mx-auto flex items-center justify-center mb-4">
-                        <span class="text-3xl">📝</span>
+                        <span class="text-2xl sm:text-3xl">📝</span>
                     </div>
                     
-                    <h1 class="text-3xl font-bold text-white mb-2">Form Registrasi</h1>
-                    <p class="text-white text-base">Silakan isi data untuk konfirmasi kehadiran</p>
+                    <h1 class="text-2xl sm:text-3xl font-bold text-white mb-2">Form Registrasi</h1>
+                    <p class="text-white text-sm sm:text-base">Silakan isi data untuk konfirmasi kehadiran</p>
                 </div>
                 
-                <!-- Form Content -->
                 <div class="p-6">
                     <form id="registrationForm" onsubmit="submitForm(event)">
-                        <!-- Nama Ortu -->
                         <div class="mb-4">
-                            <label for="namaOrtu" class="block text-base font-semibold text-gray-700 mb-2">Nama Orang Tua</label>
+                            <label for="namaOrtu" class="block text-sm sm:text-base font-semibold text-gray-700 mb-2">Nama Orang Tua</label>
                             <input type="text" id="namaOrtu" name="namaOrtu" required 
-                                   class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base">
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base">
                         </div>
                         
-                        <!-- Nama Siswa -->
                         <div class="mb-4">
-                            <label for="namaSiswa" class="block text-base font-semibold text-gray-700 mb-2">Nama Siswa</label>
+                            <label for="namaSiswa" class="block text-sm sm:text-base font-semibold text-gray-700 mb-2">Nama Siswa</label>
                             <input type="text" id="namaSiswa" name="namaSiswa" required 
-                                   class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base">
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base">
                         </div>
                         
-                        <!-- Jenjang/Kelas -->
                         <div class="mb-4">
-                            <label for="jenjang" class="block text-base font-semibold text-gray-700 mb-2">Jenjang/Kelas</label>
+                            <label for="jenjang" class="block text-sm sm:text-base font-semibold text-gray-700 mb-2">Jenjang/Kelas</label>
                             <input type="text" id="jenjang" name="jenjang" required placeholder="Contoh: SD Kelas 3, SMP Kelas 1"
-                                   class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base">
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base">
                         </div>
                         
-                        <!-- Pilih Jadwal -->
                         <div class="mb-4">
-                            <label class="block text-base font-semibold text-gray-700 mb-3">Pilih Jadwal</label>
+                            <label class="block text-sm sm:text-base font-semibold text-gray-700 mb-3">Pilih Jadwal</label>
                             <div class="space-y-3">
                                 <label class="flex items-center p-3 border border-gray-300 rounded-xl hover:bg-gray-50 cursor-pointer">
                                     <input type="radio" name="jadwal" value="Sabtu, 1 November 2025" required class="mr-3 text-blue-500">
                                     <div>
-                                        <p class="font-medium text-gray-800 text-base">Sabtu, 1 November 2025</p>
-                                        <p class="text-sm text-gray-600">Pati-Juwana • Hotel New Merdeka Pati</p>
+                                        <p class="font-medium text-gray-800 text-sm sm:text-base">Sabtu, 1 November 2025</p>
+                                        <p class="text-xs sm:text-sm text-gray-600">Pati-Juwana • Hotel New Merdeka Pati</p>
                                     </div>
                                 </label>
                                 <label class="flex items-center p-3 border border-gray-300 rounded-xl hover:bg-gray-50 cursor-pointer">
                                     <input type="radio" name="jadwal" value="Ahad, 9 November 2025" required class="mr-3 text-blue-500">
                                     <div>
-                                        <p class="font-medium text-gray-800 text-base">Ahad, 9 November 2025</p>
-                                        <p class="text-sm text-gray-600">Kudus-Jepara • Hotel Griptha Kudus</p>
+                                        <p class="font-medium text-gray-800 text-sm sm:text-base">Ahad, 9 November 2025</p>
+                                        <p class="text-xs sm:text-sm text-gray-600">Kudus-Jepara • Hotel Griptha Kudus</p>
                                     </div>
                                 </label>
                             </div>
                         </div>
                         
-                        <!-- Yang Hadir -->
                         <div class="mb-4">
-                            <label class="block text-base font-semibold text-gray-700 mb-3">Yang Hadir</label>
+                            <label class="block text-sm sm:text-base font-semibold text-gray-700 mb-3">Yang Hadir</label>
                             <div class="space-y-2">
                                 <label class="flex items-center p-3 border border-gray-300 rounded-xl hover:bg-blue-50 cursor-pointer">
                                     <input type="radio" name="yangHadir" value="Ayah/Wakil Ayah" required class="mr-3 text-blue-500">
-                                    <span class="text-blue-700 font-medium text-base">👨‍💼 Ayah/Wakil Ayah</span>
+                                    <span class="text-blue-700 font-medium text-sm sm:text-base">👨‍💼 Ayah/Wakil Ayah</span>
                                 </label>
                                 <label class="flex items-center p-3 border border-gray-300 rounded-xl hover:bg-pink-50 cursor-pointer">
                                     <input type="radio" name="yangHadir" value="Bunda/Wakil Bunda" required class="mr-3 text-pink-500">
-                                    <span class="text-pink-700 font-medium text-base">👩‍💼 Bunda/Wakil Bunda</span>
+                                    <span class="text-pink-700 font-medium text-sm sm:text-base">👩‍💼 Bunda/Wakil Bunda</span>
                                 </label>
                             </div>
                         </div>
                         
-                        <!-- Kehadiran -->
                         <div class="mb-6">
-                            <label class="block text-base font-semibold text-gray-700 mb-3">Status Kehadiran</label>
+                            <label class="block text-sm sm:text-base font-semibold text-gray-700 mb-3">Status Kehadiran</label>
                             <div class="space-y-2">
                                 <label class="flex items-center p-3 border border-gray-300 rounded-xl hover:bg-green-50 cursor-pointer">
                                     <input type="radio" name="kehadiran" value="Hadir" required class="mr-3 text-green-500">
-                                    <span class="text-green-700 font-medium text-base">✅ Hadir</span>
+                                    <span class="text-green-700 font-medium text-sm sm:text-base">✅ Hadir</span>
                                 </label>
                                 <label class="flex items-center p-3 border border-gray-300 rounded-xl hover:bg-red-50 cursor-pointer">
                                     <input type="radio" name="kehadiran" value="Tidak Hadir" required class="mr-3 text-red-500">
-                                    <span class="text-red-700 font-medium text-base">❌ Tidak Hadir</span>
+                                    <span class="text-red-700 font-medium text-sm sm:text-base">❌ Tidak Hadir</span>
                                 </label>
                             </div>
                         </div>
                         
-                        <!-- Submit Button -->
                         <button type="submit" id="submitBtn" 
-                                class="w-full bg-gradient-to-r from-green-500 to-blue-500 text-white font-bold py-4 px-6 rounded-xl hover:from-green-600 hover:to-blue-600 transform hover:scale-105 transition-all duration-200 shadow-lg text-lg">
+                                class="w-full bg-gradient-to-r from-green-500 to-blue-500 text-white font-bold py-4 px-6 rounded-xl hover:from-green-600 hover:to-blue-600 transform hover:scale-105 transition-all duration-200 shadow-lg text-base sm:text-lg">
                             📤 Kirim Registrasi
                         </button>
                     </form>
                     
-                    <!-- Success Message -->
                     <div id="successMessage" class="hidden mt-6 p-4 bg-green-50 border border-green-200 rounded-xl">
                         <div class="flex items-center">
-                            <span class="text-2xl mr-3">✅</span>
+                            <span class="text-xl sm:text-2xl mr-3">✅</span>
                             <div>
-                                <h3 class="font-semibold text-green-800 text-base">Registrasi Berhasil!</h3>
-                                <p class="text-sm text-green-700">Data tersimpan dengan aman. Terima kasih!</p>
-                                <button onclick="showDashboard()" class="mt-3 text-blue-600 hover:text-blue-800 font-medium text-sm">
+                                <h3 class="font-semibold text-green-800 text-sm sm:text-base">Registrasi Berhasil!</h3>
+                                <p class="text-xs sm:text-sm text-green-700">Data tersimpan dengan aman. Terima kasih!</p>
+                                <button onclick="showDashboard()" class="mt-3 text-blue-600 hover:text-blue-800 font-medium text-xs sm:text-sm">
                                     👀 Lihat Papan Konfirmasi
                                 </button>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Error Message -->
                     <div id="errorMessage" class="hidden mt-6 p-4 bg-red-50 border border-red-200 rounded-xl">
                         <div class="flex items-center">
-                            <span class="text-2xl mr-3">❌</span>
+                            <span class="text-xl sm:text-2xl mr-3">❌</span>
                             <div>
-                                <h3 class="font-semibold text-red-800 text-base">Terjadi Kesalahan</h3>
-                                <p class="text-sm text-red-700" id="errorText"></p>
+                                <h3 class="font-semibold text-red-800 text-sm sm:text-base">Terjadi Kesalahan</h3>
+                                <p class="text-xs sm:text-sm text-red-700" id="errorText"></p>
                             </div>
                         </div>
                     </div>
@@ -288,10 +264,8 @@
             </div>
         </div>
         
-        <!-- Dashboard Page -->
         <div id="dashboardPage" class="w-full max-w-lg mx-auto hidden">
             <div class="bg-white rounded-3xl card-shadow overflow-hidden">
-                <!-- Header -->
                 <div class="bg-gradient-to-r from-purple-500 to-indigo-500 p-6 text-center relative">
                     <button onclick="showRegistrationPage()" class="absolute top-4 left-4 text-white hover:text-gray-200">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -300,37 +274,32 @@
                     </button>
                     
                     <div class="w-16 h-16 bg-white rounded-full mx-auto flex items-center justify-center mb-4">
-                        <span class="text-3xl">📊</span>
+                        <span class="text-2xl sm:text-3xl">📊</span>
                     </div>
                     
-                    <h1 class="text-3xl font-bold text-white mb-2">Papan Konfirmasi</h1>
-                    <p class="text-white text-base">Status kehadiran peserta seminar</p>
+                    <h1 class="text-2xl sm:text-3xl font-bold text-white mb-2">Papan Konfirmasi</h1>
+                    <p class="text-white text-sm sm:text-base">Status kehadiran peserta seminar</p>
                 </div>
                 
-                <!-- Dashboard Content -->
                 <div class="p-6">
-                    <!-- Loading State -->
                     <div id="dashboardLoading" class="text-center py-8">
                         <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-500 mx-auto mb-4"></div>
-                        <p class="text-gray-600 text-base">Memuat data...</p>
+                        <p class="text-gray-600 text-sm sm:text-base">Memuat data...</p>
                     </div>
                     
-                    <!-- Dashboard Content -->
                     <div id="dashboardContent" class="hidden">
-                        <!-- Counter Cards -->
                         <div class="grid grid-cols-2 gap-4 mb-6">
                             <div class="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
-                                <div class="text-4xl font-bold text-green-600" id="hadirCount">0</div>
-                                <div class="text-base text-green-700 font-medium">✅ Hadir</div>
+                                <div class="text-3xl sm:text-4xl font-bold text-green-600" id="hadirCount">0</div>
+                                <div class="text-sm sm:text-base text-green-700 font-medium">✅ Hadir</div>
                             </div>
                             <div class="bg-red-50 border border-red-200 rounded-xl p-6 text-center">
-                                <div class="text-4xl font-bold text-red-600" id="tidakHadirCount">0</div>
-                                <div class="text-base text-red-700 font-medium">❌ Tidak Hadir</div>
+                                <div class="text-3xl sm:text-4xl font-bold text-red-600" id="tidakHadirCount">0</div>
+                                <div class="text-sm sm:text-base text-red-700 font-medium">❌ Tidak Hadir</div>
                             </div>
                         </div>
                         
-                        <!-- Refresh Button -->
-                        <button onclick="loadDashboardData()" class="w-full bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-bold py-3 px-6 rounded-xl hover:from-purple-600 hover:to-indigo-600 transition-all duration-200 text-lg">
+                        <button onclick="loadDashboardData()" class="w-full bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-bold py-3 px-6 rounded-xl hover:from-purple-600 hover:to-indigo-600 transition-all duration-200 text-base sm:text-lg">
                             🔄 Refresh Data
                         </button>
                     </div>
@@ -341,100 +310,100 @@
     
     <script>
         // === GANTI URL INI DENGAN URL DEPLOYMENT APPS SCRIPT LU YANG TERBARU ===
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxtyj8ISzh_P2lFgqTCxlODHtyF2tQmDu9rsZXm_H_k9BC0V7GeqMCoojfzs5xvmWvxPw/exec';
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxtyj8ISzh_P2lFgqTCxlODHtyF2tQmDu9rsZXm_H_k9BC0V7GeqMCoojfzs5xvmWvxPw/exec';
 
-// --- BAGIAN INI JANGAN DIUBAH ---
-function showPage(pageId) {
-    document.getElementById('invitationPage').classList.add('hidden');
-    document.getElementById('registrationPage').classList.add('hidden');
-    document.getElementById('dashboardPage').classList.add('hidden');
-    document.getElementById(pageId).classList.remove('hidden');
+        // --- BAGIAN INI JANGAN DIUBAH ---
+        function showPage(pageId) {
+            document.getElementById('invitationPage').classList.add('hidden');
+            document.getElementById('registrationPage').classList.add('hidden');
+            document.getElementById('dashboardPage').classList.add('hidden');
+            document.getElementById(pageId).classList.remove('hidden');
 
-    if (pageId === 'dashboardPage') {
-        loadDashboardData();
-    }
-}
-
-function showRegistrationForm() { showPage('registrationPage'); }
-function showInvitationPage() { showPage('invitationPage'); }
-function showDashboard() { showPage('dashboardPage'); }
-        
-function showErrorMessage(message) {
-    document.getElementById('errorText').textContent = message;
-    document.getElementById('errorMessage').classList.remove('hidden');
-}
-
-async function submitForm(event) {
-    event.preventDefault();
-    const submitBtn = document.getElementById('submitBtn');
-    const originalText = submitBtn.innerHTML;
-    
-    submitBtn.innerHTML = '⏳ Mengirim...';
-    submitBtn.disabled = true;
-    document.getElementById('errorMessage').classList.add('hidden');
-
-    const formData = new FormData(event.target);
-    const data = {
-        timestamp: new Date().toLocaleString('id-ID'),
-        namaOrtu: formData.get('namaOrtu'),
-        namaSiswa: formData.get('namaSiswa'),
-        jenjang: formData.get('jenjang'),
-        jadwal: formData.get('jadwal'),
-        yangHadir: formData.get('yangHadir'),
-        kehadiran: formData.get('kehadiran')
-    };
-
-    try {
-        const response = await fetch(SCRIPT_URL, {
-            method: 'POST',
-            mode: 'no-cors',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data)
-        });
-        
-        console.log('Data sent successfully.');
-        document.getElementById('registrationForm').classList.add('hidden');
-        document.getElementById('successMessage').classList.remove('hidden');
-
-    } catch (error) {
-        console.error('Fetch Error:', error);
-        showErrorMessage('Gagal terhubung ke server. Cek koneksi & URL Script.');
-    } finally {
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-    }
-}
-        
-async function loadDashboardData() {
-    const loading = document.getElementById('dashboardLoading');
-    const content = document.getElementById('dashboardContent');
-    
-    loading.classList.remove('hidden');
-    content.classList.add('hidden');
-
-    try {
-        const response = await fetch(SCRIPT_URL);
-        if (!response.ok) {
-            throw new Error(`Server merespons dengan error: ${response.statusText}`);
-        }
-        const result = await response.json();
-        
-        if (result && result.counts) {
-             document.getElementById('hadirCount').textContent = result.counts.hadir;
-             document.getElementById('tidakHadirCount').textContent = result.counts.tidak;
-        } else {
-            throw new Error('Format data dari server salah.');
+            if (pageId === 'dashboardPage') {
+                loadDashboardData();
+            }
         }
 
-    } catch (error) {
-        console.error('Error saat memuat dashboard:', error);
-        document.getElementById('hadirCount').textContent = 'X';
-        document.getElementById('tidakHadirCount').textContent = 'X';
-    } finally {
-        loading.classList.add('hidden');
-        content.classList.remove('hidden');
-    }
-}
+        function showRegistrationForm() { showPage('registrationPage'); }
+        function showInvitationPage() { showPage('invitationPage'); }
+        function showDashboard() { showPage('dashboardPage'); }
+                
+        function showErrorMessage(message) {
+            document.getElementById('errorText').textContent = message;
+            document.getElementById('errorMessage').classList.remove('hidden');
+        }
+
+        async function submitForm(event) {
+            event.preventDefault();
+            const submitBtn = document.getElementById('submitBtn');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '⏳ Mengirim...';
+            submitBtn.disabled = true;
+            document.getElementById('errorMessage').classList.add('hidden');
+
+            const formData = new FormData(event.target);
+            const data = {
+                timestamp: new Date().toLocaleString('id-ID'),
+                namaOrtu: formData.get('namaOrtu'),
+                namaSiswa: formData.get('namaSiswa'),
+                jenjang: formData.get('jenjang'),
+                jadwal: formData.get('jadwal'),
+                yangHadir: formData.get('yangHadir'),
+                kehadiran: formData.get('kehadiran')
+            };
+
+            try {
+                const response = await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                
+                console.log('Data sent successfully.');
+                document.getElementById('registrationForm').classList.add('hidden');
+                document.getElementById('successMessage').classList.remove('hidden');
+
+            } catch (error) {
+                console.error('Fetch Error:', error);
+                showErrorMessage('Gagal terhubung ke server. Cek koneksi & URL Script.');
+            } finally {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }
+        }
+                
+        async function loadDashboardData() {
+            const loading = document.getElementById('dashboardLoading');
+            const content = document.getElementById('dashboardContent');
+            
+            loading.classList.remove('hidden');
+            content.classList.add('hidden');
+
+            try {
+                const response = await fetch(SCRIPT_URL);
+                if (!response.ok) {
+                    throw new Error(`Server merespons dengan error: ${response.statusText}`);
+                }
+                const result = await response.json();
+                
+                if (result && result.counts) {
+                     document.getElementById('hadirCount').textContent = result.counts.hadir;
+                     document.getElementById('tidakHadirCount').textContent = result.counts.tidak;
+                } else {
+                    throw new Error('Format data dari server salah.');
+                }
+
+            } catch (error) {
+                console.error('Error saat memuat dashboard:', error);
+                document.getElementById('hadirCount').textContent = 'X';
+                document.getElementById('tidakHadirCount').textContent = 'X';
+            } finally {
+                loading.classList.add('hidden');
+                content.classList.remove('hidden');
+            }
+        }
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98fd2e0be3234f19',t:'MTc2MDY3NjY3Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
